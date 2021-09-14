@@ -1,9 +1,13 @@
 import React from "react";
 import { projects } from "../Data";
-import {} from "@chakra-ui/react";
+import { Box, Heading, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
 
-function Projects () {
-
+function Projects() {
+  return (
+    <section>
+        
+    </section>
+  );
 }
 
 export default Projects;

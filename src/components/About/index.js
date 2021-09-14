@@ -1,8 +1,12 @@
 import React from "react";
-import {} from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react"
 
-function Navbar() {
-    
+function About () {
+    return (
+        <Text>
+            
+        </Text>
+    )
 }
 
-export default Navbar;
+export default About;
