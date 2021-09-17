@@ -1,37 +1,67 @@
 import React from "react";
 import { skills } from "../Data";
-import { List, ListItem } from "@chakra-ui/react";
-import {SiHtml5, SiCss3, SiJavascript, SiReact,  SiMysql, SiNodeDotJs, SiGraphql, SiMongodb} from "react-icons/si"
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiMysql,
+  SiNodeDotJs,
+  SiGraphql,
+  SiMongodb,
+} from "react-icons/si";
 
 function Skills() {
   return (
-    <section>
-      <List spacing={3} p={10}>
-      <ListItem>
+    <section id="skills">
+      <h2 id="about">SKILLS</h2>
+      <hr />
+      <ul className="skills-list">
+        <li>
           <SiHtml5 /> HTML5
-        </ListItem>
-        <ListItem>
+        </li>
+        <li>
           <SiCss3 /> CSS3
-        </ListItem>
-        <ListItem>
+        </li>
+        <li>
           <SiJavascript /> JavaScript
-        </ListItem>
-        <ListItem>
-         <SiReact /> React
-        </ListItem>
-        <ListItem>
-         <SiMysql/> MySQL
-        </ListItem>
-        <ListItem>
+        </li>
+        <li>
+          <SiReact /> React
+        </li>
+        <li>
+          <SiMysql /> MySQL
+        </li>
+        <li>
           <SiNodeDotJs /> Node
-        </ListItem>
-        <ListItem>
-          <SiGraphql/> GraphQL
-        </ListItem>
-        <ListItem>
-          <SiMongodb />MongoDB
-        </ListItem>
-      </List>
+        </li>
+        <li>
+          <SiGraphql /> GraphQL
+        </li>
+        <li>
+          <SiMongodb /> MongoDB
+        </li>
+      </ul>
+
+      <div>
+        <div>
+          <h2 id="about">
+            Skills &amp; Technologies
+          </h2>
+          <hr />
+        </div>
+        <div >
+          {(skills).map((skill) => (
+            <div key={skill}>
+              <div>
+                <span className="skills-list">
+                  {skill}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

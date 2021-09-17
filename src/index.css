@@ -23,11 +23,6 @@ main {
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
-  --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -52,23 +47,12 @@ body {
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
 h1 {
   font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -89,7 +73,9 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin-top: 0;
+  overflow: auto;
+  display: block;
+  
 }
 
 header {
@@ -118,23 +104,21 @@ li {
 }
 
 li a {
-  display: block;
   color: var(--light);
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background-color: var(--dark);
 }
 
 .nav-btn {
 	padding: 15px 30px;
 	margin: 10px;
-	display: inline-block;
   text-decoration: none;
+  border: 1px solid var(--light);
 }
 
 .nav-btn:hover{
 	text-decoration: none;
-  border-style: ridge;
+  /* border-style: ridge; */
 }
 
 /*===================*/
@@ -205,7 +189,31 @@ li a {
   animation-direction: normal, alternate;
 }
 
+#about {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+img {
+  /* float: left; */
+  border-radius: 15px;
+  border: 2px solid var(--light);
+  width: 40%;
+  margin-right: 30px;
+}
+
+.skills-list {
+  color: var(--secondary);
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  
+}
+
 @media screen and (max-width: 600px) {
-  ul li, 
-  ul li {float: none;}
+  ul li {float: none; display: grid; position: static;}
+  img {width: 100%;}
+  p {display: inline-block;}
+
 }
