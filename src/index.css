@@ -63,19 +63,10 @@ h4 {
   font-size: 1.5rem;
 }
 
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
 p {
   font-size: 1.1rem;
   overflow: auto;
   display: block;
-  
 }
 
 header {
@@ -195,7 +186,7 @@ li a {
 }
 
 img {
-  /* float: left; */
+  float: left;
   border-radius: 15px;
   border: 2px solid var(--light);
   width: 40%;
@@ -204,11 +195,14 @@ img {
 
 .skills-list {
   color: var(--secondary);
-  top: 0;
+  text-align: center;
   width: 100%;
-  list-style-type: none;
-  margin: 0;
-  
+  margin: 10px;
+}
+
+.skill-item {
+  text-align: center;
+  padding: 10px 95px 10px 12px ;
 }
 
 @media screen and (max-width: 600px) {

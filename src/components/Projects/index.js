@@ -29,7 +29,7 @@ function Projects() {
                   <h3>
                     {project.title}
                   </h3>
-                  <p>{project.description}</p>
+                  <h4>{project.description}</h4>
                 </div>
               </div>
             </a>

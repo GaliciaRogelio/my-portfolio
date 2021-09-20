@@ -17,40 +17,40 @@ function Skills() {
       <h2 id="about">SKILLS</h2>
       <hr />
       <ul className="skills-list">
-        <li>
+        <li className="skill-item">
           <SiHtml5 /> HTML5
         </li>
-        <li>
+        <li className="skill-item">
           <SiCss3 /> CSS3
         </li>
-        <li>
+        <li className="skill-item">
           <SiJavascript /> JavaScript
         </li>
-        <li>
+        <li className="skill-item">
           <SiReact /> React
         </li>
-        <li>
+        <li className="skill-item">
           <SiMysql /> MySQL
         </li>
-        <li>
+        <li className="skill-item">
           <SiNodeDotJs /> Node
         </li>
-        <li>
+        <li className="skill-item">
           <SiGraphql /> GraphQL
         </li>
-        <li>
+        <li className="skill-item">
           <SiMongodb /> MongoDB
         </li>
       </ul>
 
-      <div>
+      {/* <div>
         <div>
           <h2 id="about">
             Skills &amp; Technologies
           </h2>
           <hr />
         </div>
-        <div >
+        <div className="container">
           {(skills).map((skill) => (
             <div key={skill}>
               <div>
@@ -61,7 +61,7 @@ function Skills() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
