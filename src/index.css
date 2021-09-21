@@ -185,6 +185,10 @@ li a {
   color: var(--primary);
 }
 
+.container {
+  display: flow-root;
+}
+
 img {
   float: left;
   border-radius: 15px;
