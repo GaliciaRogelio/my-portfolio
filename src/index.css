@@ -60,7 +60,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 p {
@@ -207,6 +207,36 @@ img {
 .skill-item {
   text-align: center;
   padding: 10px 95px 10px 12px ;
+}
+
+.project-items {
+  color: var(--light);
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.1rem;
+}
+
+svg{
+  width:30%;
+  margin:0 auto;
+}
+#hex{
+  stroke-width:2;
+  stroke: var(--secondary);
+  fill-opacity:0.6;
+  transition:fill-opacity .5s;
+}
+svg:hover #hex {
+  fill-opacity:1;
+}
+#text{
+  stroke-width:0.5;
+  stroke:teal;
+  fill-opacity:0.4;
+  fill:teal;
+  transition:fill-opacity .8s;
+}
+svg:hover #text{
+  fill-opacity:1;
 }
 
 @media screen and (max-width: 600px) {
