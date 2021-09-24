@@ -1,6 +1,6 @@
 import React from "react";
 import { projects } from "../Data";
-import TestImg from "../../assets/cover/profile-image.jpeg"
+import TestImg from "../../assets/cover/profile-image.jpeg";
 
 function Projects() {
   return (
@@ -20,36 +20,32 @@ function Projects() {
         ))}
       </div> */}
       {projects.map((project) => (
-      <svg
-        viewbox="0 0 100 100"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <pattern
-            id="img"
-            patternUnits="userSpaceOnUse"
-            width="300"
-            height="300"
+        <a href={project.link}>
+          <svg
+            viewbox="0 0 100 100"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <image
-              href={project.link}
-              key={project.image}
-              x="-25"
-              width="150"
-              height="100"
+            <defs>
+              <pattern
+                id="img"
+                patternUnits="userSpaceOnUse"
+                width="300"
+                height="300"
+              >
+                <image href={project.image} x="-25" width="150" height="100" />
+              </pattern>
+            </defs>
+            <polygon
+              id="hex"
+              points="50 1 95 25 95 75 50 99 5 75 5 25"
+              fill="url(#img)"
             />
-          </pattern>
-        </defs>
-        <polygon
-          id="hex"
-          points="50 1 95 25 95 75 50 99 5 75 5 25"
-          fill="url(#img)"
-        />
-        <text id="text" font-size="20" x="50" y="50" text-anchor="middle">
-          {project.title}
-        </text>
-      </svg>
+            <text id="text" font-size="20" x="50" y="50" text-anchor="middle">
+              {project.title}
+            </text>
+          </svg>
+        </a>
       ))}
     </section>
   );
