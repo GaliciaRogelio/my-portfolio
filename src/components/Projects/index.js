@@ -22,7 +22,7 @@ function Projects() {
       {projects.map((project) => (
         <a href={project.link}>
           <svg
-            viewbox="0 0 100 100"
+            viewBox="0 0 100 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -41,7 +41,7 @@ function Projects() {
               points="50 1 95 25 95 75 50 99 5 75 5 25"
               fill="url(#img)"
             />
-            <text id="text" font-size="20" x="50" y="50" text-anchor="middle">
+            <text id="text" fontSize="8" x="50" y="50" textAnchor="middle">
               {project.title}
             </text>
           </svg>

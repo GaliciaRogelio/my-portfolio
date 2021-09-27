@@ -209,15 +209,9 @@ img {
   padding: 10px 95px 10px 12px ;
 }
 
-.project-items {
-  color: var(--light);
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.1rem;
-}
-
 svg{
-  width:30%;
-  margin:0 auto;
+  width: 200px;
+  margin: 7px;
 }
 #hex{
   stroke-width:2;
@@ -230,9 +224,9 @@ svg:hover #hex {
 }
 #text{
   stroke-width:0.5;
-  stroke:teal;
+  stroke: var(--primary);
   fill-opacity:0.4;
-  fill:teal;
+  fill: var(--light);
   transition:fill-opacity .8s;
 }
 svg:hover #text{
