@@ -233,7 +233,7 @@ svg:hover #hex {
   stroke-width:0.5;
   stroke: var(--dark);
   fill-opacity:0.4;
-  fill: var(--light);
+  fill: var(--primary);
   transition:fill-opacity .8s;
 }
 svg:hover #text{

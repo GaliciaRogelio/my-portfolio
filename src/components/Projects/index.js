@@ -29,8 +29,8 @@ function Projects() {
               points="50 1 95 25 95 75 50 99 5 75 5 25"
               fill="url(#img)"
             />
-            <text id="text" fontSize="8" x="50" y="50" textAnchor="middle">
-              {project.title}
+            <text id="text" fontSize="12" x="50" y="50" textAnchor="middle">
+              Click me!
             </text>
           </svg>
         </a>
