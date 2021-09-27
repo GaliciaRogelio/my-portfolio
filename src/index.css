@@ -79,6 +79,18 @@ header {
   color: var(--secondary);
 }
 
+.skills-list {
+  color: var(--secondary);
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.skill-item {
+  text-align: center;
+  padding: 10px 95px 10px 12px ;
+}
+
 ul {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -197,18 +209,6 @@ img {
   margin-right: 30px;
 }
 
-.skills-list {
-  color: var(--secondary);
-  text-align: center;
-  width: 100%;
-  margin: 10px;
-}
-
-.skill-item {
-  text-align: center;
-  padding: 10px 95px 10px 12px ;
-}
-
 svg{
   width: 200px;
   margin: 7px;
@@ -222,9 +222,16 @@ svg{
 svg:hover #hex {
   fill-opacity:1;
 }
-#text{
+
+.project-cont {
+  display: inline-block;
+  width: 176px;
+  margin: 15px
+}
+
+#text {
   stroke-width:0.5;
-  stroke: var(--primary);
+  stroke: var(--dark);
   fill-opacity:0.4;
   fill: var(--light);
   transition:fill-opacity .8s;
@@ -237,5 +244,6 @@ svg:hover #text{
   ul li {float: none; display: grid; position: static;}
   img {width: 100%;}
   p {display: inline-block;}
+  .project-cont {display: contents;}
 
 }

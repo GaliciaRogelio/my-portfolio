@@ -7,18 +7,6 @@ function Projects() {
     <section id="projects">
       <h2 id="about">My Projects</h2>
       <hr />
-      {/* <div className="project-items">
-        {projects.map((project) => (
-          <a href={project.link} key={project.image}>
-            <img alt="gallery" src={project.image} />
-            <div>
-              <h4>{project.subtitle}</h4>
-              <h3>{project.title}</h3>
-              <h4>{project.description}</h4>
-            </div>
-          </a>
-        ))}
-      </div> */}
       {projects.map((project) => (
         <a href={project.link}>
           <svg
@@ -33,7 +21,7 @@ function Projects() {
                 width="300"
                 height="300"
               >
-                <image href={project.image} x="-25" width="150" height="100" />
+                <image href={TestImg} x="-25" width="150" height="100" />
               </pattern>
             </defs>
             <polygon
