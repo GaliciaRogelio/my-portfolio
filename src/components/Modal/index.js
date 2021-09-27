@@ -15,4 +15,4 @@ function Modal ({ onClose, currentPhoto }) {
   );
 }
 
-export default Modal;
+export default Modal;         

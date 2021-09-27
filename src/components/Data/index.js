@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import {
   SiHtml5,
   SiCss3,
@@ -9,7 +11,7 @@ import {
   SiMongodb,
 } from "react-icons/si";
 
-export const projects = [
+const [projects] = useState ([
     {
       title: "What's for Dinner",
       subtitle: "Third Party API Application",
@@ -46,9 +48,9 @@ export const projects = [
       link: "https://galiciarogelio.github.io/your-city-weather/",
       github: "https://github.com/GaliciaRogelio/your-city-weather"
     },
-  ];
+  ]);
   
-  export const skills = [
+  const skills = [
     "HTML5",
     "CSS3",
     "JavaScript",
@@ -59,7 +61,7 @@ export const projects = [
     "MongoDB"
   ];
 
-  export const logos = [
+  const logos = [
     <SiHtml5 />,
     <SiCss3 />,
     <SiJavascript />,
@@ -69,4 +71,6 @@ export const projects = [
     <SiGraphql />,
     <SiMongodb />
   ]
+
+  export default { projects, skills, logos }
   
