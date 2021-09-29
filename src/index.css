@@ -240,8 +240,19 @@ svg:hover #text{
   fill-opacity:1;
 }
 
+.modalBackdrop {
+	background: var(--dark);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
 .modalContainer {
-	background: var(--darker);
+	background: var(--dark);
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -256,7 +267,7 @@ svg:hover #text{
 }
 
 button {
-	background: var(--primary);
+	background: var(--secondary);
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -265,6 +276,40 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid var(--primary);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--dark);
+  width: 50%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+background-color: var(--light);
+outline: none;
+}
+
+.contact-form button {
+  width: 50%;
+  border: var(--light);
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: var(--light);
+  background: var(--secondary);
 }
 
 @media screen and (max-width: 600px) {

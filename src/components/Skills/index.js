@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../Data";
+// import { skills } from "../ProjectList";
 import {
   SiHtml5,
   SiCss3,
