@@ -5,17 +5,21 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <main>
+    <div>
       <Header />
       <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </main>
+      <main>
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

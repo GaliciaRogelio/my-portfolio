@@ -1,7 +1,7 @@
 import React from "react";
 
-function Projects(props) {
-  const { categories = [], setCurrentCategory, currentCategory } = props;
+function Projects({ currentCategory }) {
+  const { image } = currentCategory;
 
   return (
     <section id="projects">
@@ -22,7 +22,7 @@ function Projects(props) {
               width="300"
               height="300"
             >
-              <image href={category.image} x="5" width="90" height="100" />
+              <image href={image} x="5" width="90" height="100" />
             </pattern>
           </defs>
           <polygon
@@ -35,7 +35,7 @@ function Projects(props) {
           </text>
           <span
             onClick={() => {
-              setCurrentCategory(category);
+              setCurrentCategory(currentCategory);
             }}
           ></span>
         </svg>
