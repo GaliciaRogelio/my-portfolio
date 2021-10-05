@@ -240,6 +240,10 @@ svg:hover #text{
   fill-opacity:1;
 }
 
+.navActive {
+  color: var(--secondary);
+}
+
 .modalBackdrop {
 	background: var(--dark);
 	bottom: 0;
@@ -311,6 +315,7 @@ outline: none;
   color: var(--light);
   background: var(--secondary);
 }
+
 
 @media screen and (max-width: 600px) {
   ul li {float: none; display: grid; position: static;}
