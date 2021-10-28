@@ -1,15 +1,15 @@
 import React from "react";
 
 function Modal({ onClose, currentProject }) {
-  const { title, subtitle, category, description, link, github, index } = currentProject;
+  const { title, subtitle, description, link, github, index, category } = currentProject;
   return (
     <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{title}</h3>
         <h4>{subtitle}</h4>
         <img
-          src={require(`../../assets/${category}/${index}.gif`).default}
-          alt="current category"
+          src={require(`../../assets/gifs/${category}/${index}.gif`).default}
+          alt="current project"
         />
         <p>{description}</p>
         <button onClick={onClose} type="button">

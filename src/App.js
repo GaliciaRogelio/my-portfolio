@@ -7,13 +7,14 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
-function App() {
+function App({ currentProject }) {
+  
   return (
     <main>
       <Header />
       <Navbar />
       <About />
-      <Projects />
+      <Projects project={currentProject} />
       <Skills />
       <Contact />
       <Footer />
