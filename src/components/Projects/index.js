@@ -49,19 +49,19 @@ function Projects({ category }) {
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
   const currentProjects = projects.filter((project) => project.category === category);
-  // const toggleModal = (gif, i) => {
-  //   // current gif
-  //   setCurrentProject({ ...gif, index: i });
-  //   setIsModalOpen(!isModalOpen);
-  // };
+  const toggleModal = (gif, i) => {
+    // current gif
+    setCurrentProject({ ...gif, index: i });
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <section id="projects">
       <h2 id="about">My Projects</h2>
       <hr />
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <Modal currentProject={currentProject} onClose={toggleModal} />
-      )} */}
+      )}
       {currentProjects.map((gif, i) => (
         <svg
           key={gif.title}
@@ -77,7 +77,7 @@ function Projects({ category }) {
               height="300"
             >
               <img src={require(`../../assets/gifs/${category}/${i}.gif`).default} x="3" width="117" height="100" alt={gif.title}/>
-              {/* onClick={() => toggleModal(gif, i)} */}
+              onClick={() => toggleModal(gif, i)}
             </pattern>
           </defs>
           <polygon
