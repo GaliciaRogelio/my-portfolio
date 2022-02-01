@@ -117,6 +117,7 @@ li a {
 	margin: 10px;
   text-decoration: none;
   border: 1px solid var(--light);
+  border-radius: 15px;
 }
 
 .nav-btn:hover{
