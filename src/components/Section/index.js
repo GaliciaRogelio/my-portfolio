@@ -10,16 +10,16 @@ function Section(props) {
   const { currentSection } = props;
   const renderSection = () => {
     switch (currentSection.name) {
-      case "contact":
-        return <Contact />;
       case "about":
         return <About />;
+      case "contact":
+        return <Contact />;
       case "skills":
         return <Skills />;
       case "projects":
         return <Project />;
-      case "resume":
-        return <Resume />;
+      // case "resume":
+      //   return <Resume />;
     }
   };
   return (

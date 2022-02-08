@@ -91,26 +91,29 @@ header {
   padding: 10px 95px 10px 12px ;
 }
 
-ul {
+nav {
+  display: contents;
+}
+/* ul {
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  /* position: sticky;
   top: 0;
   width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
+  overflow: hidden; */
+/* } */ 
 
-li {
+/* li {
   float: left;
-}
+} */
 
-li a {
+/* li a {
   color: var(--light);
   text-align: center;
   background-color: var(--dark);
-}
+} */
 
 .nav-btn {
 	padding: 15px 30px;
@@ -323,5 +326,8 @@ outline: none;
   img {width: 100%;}
   p {display: inline-block;}
   .project-cont {display: contents;}
+  nav {
+    display: grid;
+  }
 
 }
