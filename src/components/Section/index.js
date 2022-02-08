@@ -18,8 +18,8 @@ function Section(props) {
         return <Skills />;
       case "projects":
         return <Project />;
-      // case "resume":
-      //   return <Resume />;
+      case "resume":
+        return <Resume />;
     }
   };
   return (

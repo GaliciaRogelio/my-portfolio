@@ -6,11 +6,11 @@ import Footer from "./components/Footer";
 
 function App() {
   const [sections] = useState([
-    { name: "contact", id: 1 },
-    { name: "about", id: 2 },
-    { name: "skills", id: 3 },
-    { name: "projects", id: 4 },
-    { name: "resume", id: 5 },
+    { name: "about", id: 1 },
+    { name: "skills", id: 2 },
+    { name: "projects", id: 3 },
+    { name: "resume", id: 4 },
+    { name: "contact", id: 5 },
   ]);
 
   const [currentSection, setCurrentSection] = useState(sections[0]);
