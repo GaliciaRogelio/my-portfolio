@@ -83,8 +83,10 @@ header {
 .skills-list {
   color: var(--secondary);
   text-align: center;
-  width: 100%;
-  margin: 10px;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 65px;
 }
 
 .skill-item {

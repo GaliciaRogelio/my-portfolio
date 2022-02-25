@@ -1,5 +1,5 @@
 import React from "react";
-// import { skills } from "../ProjectList";
+import { skills } from "../../utils/helpers";
 import {
   SiHtml5,
   SiCss3,
@@ -16,7 +16,7 @@ function Skills() {
     <section id="skills">
       <h2 id="about">SKILLS</h2>
       <hr />
-      <ul className="skills-list">
+      {/* <ul className="skills-list">
         <li className="skill-item">
           <SiHtml5 /> HTML5
         </li>
@@ -40,15 +40,15 @@ function Skills() {
         </li>
         <li className="skill-item">
           <SiMongodb /> MongoDB
-        </li>
-      </ul>
+        </li> */}
+      {/* </ul> */}
 
-      {/* <div>
+      {<div>
         <div>
-          <h2 id="about">
+          {/* <h2 id="about">
             Skills &amp; Technologies
-          </h2>
-          <hr />
+          </h2> */}
+          {/* <hr /> */}
         </div>
         <div className="container">
           {(skills).map((skill) => (
@@ -61,7 +61,7 @@ function Skills() {
             </div>
           ))}
         </div>
-      </div> */}
+      </div> }
     </section>
   );
 }
