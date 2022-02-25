@@ -91,7 +91,10 @@ header {
 
 .skill-item {
   text-align: center;
-  padding: 10px 95px 10px 12px ;
+  /* padding: 10px 95px 10px 12px ; */
+  display: inline-block;
+  width: 80px;
+  height: 80px;
 }
 
 nav {
@@ -325,6 +328,12 @@ outline: none;
 .contact-form button:hover {
   color: var(--light);
   background: var(--secondary);
+}
+
+footer {
+  position:fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 
