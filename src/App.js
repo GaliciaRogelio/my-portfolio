@@ -22,7 +22,7 @@ function App() {
       sections={sections}
       setCurrentSection={setCurrentSection}
       currentSection={currentSection}/>
-      <div>
+      <div className="mid-section">
         <Section currentSection={currentSection} />
       </div>
       <Footer />

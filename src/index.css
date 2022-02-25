@@ -25,9 +25,10 @@ main {
   --darker: #111111;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+  
+} */
 
 html,
 body {
@@ -194,6 +195,10 @@ nav {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+}
+
+.mid-section {
+  height: 555px;
 }
 
 #about {
