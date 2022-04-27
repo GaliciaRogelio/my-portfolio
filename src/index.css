@@ -1,22 +1,9 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+/* Universal styles */
 main {
 	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
+	max-width: 100%;
 }
+
 :root {
   --primary: #66f3e2;
   --secondary: #f9a702;
@@ -25,22 +12,10 @@ main {
   --darker: #111111;
 }
 
-/* * {
-  box-sizing: border-box;
-  
-} */
-
-html,
 body {
-  min-height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
   font-weight: 600;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: .1em;
   background: var(--dark);
   color: var(--light);
@@ -56,70 +31,21 @@ h2 {
   font-size: 1.5rem;
 }
 
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.1rem;
-}
-
 p {
   font-size: 1.1rem;
-  overflow: auto;
-  display: block;
 }
 
-header {
-  background: var(--dark);
-}
-
+/* Top letters with brief intro */
 .intro-letters {
   text-align: center;
   font-weight: bold;
   color: var(--secondary);
 }
 
-.skills-list {
-  color: var(--secondary);
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  width: 300px;
-  height: 65px;
-}
-
-.skill-item {
-  text-align: center;
-  /* padding: 10px 95px 10px 12px ; */
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-
+/* Navigation section */
 nav {
   display: contents;
 }
-/* ul {
-  position: -webkit-sticky; /* Safari */
-  /* position: sticky;
-  top: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; */
-/* } */ 
-
-/* li {
-  float: left;
-} */
-
-/* li a {
-  color: var(--light);
-  text-align: center;
-  background-color: var(--dark);
-} */
 
 .nav-btn {
 	padding: 15px 30px;
@@ -127,11 +53,7 @@ nav {
   text-decoration: none;
   border: 1px solid var(--light);
   border-radius: 15px;
-}
-
-.nav-btn:hover{
-	text-decoration: none;
-  /* border-style: ridge; */
+  cursor: pointer;
 }
 
 /*===================*/
@@ -202,17 +124,14 @@ nav {
   animation-direction: normal, alternate;
 }
 
-.mid-section {
-  height: 555px;
-}
-
-#about {
+#section-name {
   font-weight: bold;
   color: var(--primary);
 }
 
-.container {
-  display: flow-root;
+/* About section */
+.about-container {
+  display: flex;
 }
 
 img {
@@ -223,6 +142,17 @@ img {
   margin-right: 30px;
 }
 
+/* Skills section */
+.skills-list {
+  color: var(--secondary);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 65px;
+}
+
+/* Projects section */
 svg{
   width: 200px;
   margin: 7px;
@@ -237,65 +167,7 @@ svg:hover #hex {
   fill-opacity:1;
 }
 
-.project-cont {
-  display: inline-block;
-  width: 176px;
-  margin: 15px
-}
-
-#text {
-  stroke-width:0.5;
-  stroke: var(--dark);
-  fill-opacity:0.4;
-  fill: var(--primary);
-  transition:fill-opacity .8s;
-}
-svg:hover #text{
-  fill-opacity:1;
-}
-
-.navActive {
-  color: var(--secondary);
-}
-
-.modalBackdrop {
-	background: var(--dark);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--dark);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
-
-button {
-	background: var(--secondary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
-
+/* Contact me section */
 .contact-form input, .contact-form textarea {
   border: 1px solid var(--primary);
   display: block;
@@ -330,18 +202,18 @@ outline: none;
   background: var(--secondary);
 }
 
+/* Footer section */
 footer {
   position:fixed;
   bottom: 0px;
   width: 100%;
 }
 
-
+/* Screen responsive */
 @media screen and (max-width: 600px) {
   ul li {float: none; display: grid; position: static;}
   img {width: 100%;}
   p {display: inline-block;}
-  .project-cont {display: contents;}
   nav {
     display: grid;
   }

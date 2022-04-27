@@ -46,7 +46,7 @@ function Project() {
 
   return (
     <section id="projects">
-      <h2 id="about">My Projects</h2>
+      <h2 id="section-name">My Projects</h2>
       <hr />
       {projects.map((Project, i) => (
         <svg

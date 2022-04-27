@@ -1,13 +1,3 @@
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiReact,
-  SiMysql,
-  SiNodeDotJs,
-  SiGraphql,
-  SiMongodb,
-} from "react-icons/si";
 
 export function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -28,15 +18,4 @@ export const skills = [
   "Node",
   "GraphQL",
   "MongoDB",
-];
-
-export const logos = [
-  <SiHtml5 />,
-  <SiCss3 />,
-  <SiJavascript />,
-  <SiReact />,
-  <SiMysql />,
-  <SiNodeDotJs />,
-  <SiGraphql />,
-  <SiMongodb />,
 ];

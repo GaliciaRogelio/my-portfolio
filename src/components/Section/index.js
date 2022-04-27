@@ -24,7 +24,7 @@ function Section(props) {
   };
   return (
     <div>
-      {/* <h2>{currentSection.name}</h2> */}
+      {/* { <h2>{currentSection.name}</h2>} */}
       <SectionContent>{renderSection()}</SectionContent>
     </div>
   );
